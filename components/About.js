@@ -4,7 +4,7 @@ import { Glass } from "./Glass";
 
 export default function About() {
   return (
-    <section id="about" style={{ padding: "100px 24px" }}>
+    <section id="about" style={{ padding: "50px 24px" }}>
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
 
         {/* Section label */}
