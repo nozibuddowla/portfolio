@@ -13,7 +13,7 @@ export default function Hero() {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        padding: "60px 24px 30px",
+        padding: "80px 24px",
       }}
     >
       {/* Responsive grid */}
@@ -268,7 +268,7 @@ export default function Hero() {
         @media (max-width: 480px) {
           .hero-grid {
             gap: 32px;
-            padding-top: 20px;
+            padding-top: 30px;
           }
         }
       `}</style>
