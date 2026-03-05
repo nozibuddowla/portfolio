@@ -2,7 +2,7 @@
 import { useRef } from "react";
 import { useInView, motion } from "framer-motion";
 
-export const FadeIn = ({ children, delay = 0, y = 30 }) => {
+export default function FadeIn ({ children, delay = 0, y = 30 }) {
   const ref = useRef();
   const inView = useInView(ref, { once: true, margin: "-80px" });
   return (

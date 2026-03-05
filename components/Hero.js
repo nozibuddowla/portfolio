@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { Counter } from "./Counter";
+import  Counter from "./Counter";
 
 export default function Hero() {
   const letters = "Md Nozib Ud Dowla".split("");

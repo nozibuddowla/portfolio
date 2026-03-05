@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useInView } from "framer-motion";
 
-export const Counter = ({ to }) => {
+export default function Counter({ to }) { 
   const [count, setCount] = useState(0);
   const ref = useRef();
   const inView = useInView(ref, { once: true });

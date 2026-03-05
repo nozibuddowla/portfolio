@@ -5,6 +5,7 @@ const Navbar = dynamic(() => import("../components/Navbar"), { ssr: false });
 const Hero   = dynamic(() => import("../components/Hero"),   { ssr: false });
 const About  = dynamic(() => import("../components/About"),  { ssr: false });
 const Skills = dynamic(() => import("../components/Skills"), { ssr: false });
+const Education = dynamic(() => import("../components/Education"), { ssr: false });
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />      
       <About />
       <Skills />
+      <Education />
     </main>
   );
 }

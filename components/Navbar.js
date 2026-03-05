@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-import { Glass } from "./Glass";
 import { motion, AnimatePresence } from "framer-motion";
+import Glass from "./Glass";
 
 const NAV_LINKS = ["Home", "About", "Skills", "Projects", "Contact"];
 

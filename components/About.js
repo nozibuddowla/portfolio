@@ -1,6 +1,6 @@
 "use client";
-import { FadeIn } from "./FadeIn";
-import { Glass } from "./Glass";
+import FadeIn from "./FadeIn";
+import Glass from "./Glass";
 
 export default function About() {
   return (

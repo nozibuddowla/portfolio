@@ -1,5 +1,8 @@
-export const Glass = ({ children, className = "", style = {} }) => (
-   <div
+"use client";
+
+export default function Glass({ children, className = "", style = {} }) {
+  return (
+  <div
     className={className}
     style={{
       background: "rgba(255,255,255,0.04)",
@@ -14,3 +17,4 @@ export const Glass = ({ children, className = "", style = {} }) => (
     {children}
   </div>
 );
+}

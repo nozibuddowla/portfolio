@@ -1,6 +1,6 @@
 "use client";
-import { FadeIn } from "./FadeIn";
 import { motion } from "framer-motion";
+import FadeIn from "./FadeIn";
 
 export default function Skills() {
     const SKILLS = [
