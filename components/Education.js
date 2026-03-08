@@ -26,7 +26,7 @@ export default function Education() {
   return (
     <section id="education" style={{ padding: "80px 24px" }}>
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
-        <SectionLabel number="05" label="EDUCATION" color="#38BDF8" />
+        <SectionLabel number="03" label="EDUCATION" color="#38BDF8" />
 
         {EDUCATION.map((edu, i) => (
           <FadeIn key={i} delay={0.1}>
