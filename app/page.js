@@ -11,6 +11,9 @@ const Education = dynamic(() => import("../components/Education"), {
 const Experience = dynamic(() => import("../components/Experience"), {
   ssr: false,
 });
+const Projects = dynamic(() => import("../components/Projects"), {
+  ssr: false,
+});
 
 export default function Home() {
   return (
@@ -21,6 +24,7 @@ export default function Home() {
       <Skills />
       <Education />
       <Experience />
+      <Projects />
     </main>
   );
 }
