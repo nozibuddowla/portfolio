@@ -1,5 +1,6 @@
 "use client";
 import dynamic from "next/dynamic";
+import { useState } from "react";
 
 const Navbar = dynamic(() => import("../components/Navbar"), { ssr: false });
 const Hero = dynamic(() => import("../components/Hero"), { ssr: false });
@@ -16,9 +17,10 @@ const Projects = dynamic(() => import("../components/Projects"), {
 });
 
 export default function Home() {
+  const [active, setActive] = useState("Home");
   return (
     <main>
-      <Navbar />
+      <Navbar active={active} setActive={setActive} />
       <Hero />
       <About />
       <Skills />
