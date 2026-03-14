@@ -1,6 +1,6 @@
 "use client";
-import dynamic from "next/dynamic";
 import { useState } from "react";
+import dynamic from "next/dynamic";
 
 const Navbar = dynamic(() => import("../components/Navbar"), { ssr: false });
 const Hero = dynamic(() => import("../components/Hero"), { ssr: false });
@@ -15,6 +15,8 @@ const Experience = dynamic(() => import("../components/Experience"), {
 const Projects = dynamic(() => import("../components/Projects"), {
   ssr: false,
 });
+const Contact = dynamic(() => import("../components/Contact"), { ssr: false });
+const Footer = dynamic(() => import("../components/Footer"), { ssr: false });
 
 export default function Home() {
   const [active, setActive] = useState("Home");
@@ -27,6 +29,8 @@ export default function Home() {
       <Education />
       <Experience />
       <Projects />
+      <Contact />
+      <Footer />
     </main>
   );
 }
